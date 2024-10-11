@@ -68,4 +68,11 @@ jobs:
           app-name: 'kunalcustomdeploy-webapp-pkthac3bvwpec'
           slot-name: 'Production'
           package: .
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./your-project-folder  # Make sure this points to the folder containing package.json
+
           
